@@ -4,10 +4,12 @@
 :before {
   box-sizing: border-box;
 }
+
 .container {
   border: 1px solid #bfd6e6;
   background-color: #dde9f3;
 }
+
 .activity {
   margin: 10px;
   background-size: contain;
@@ -43,3 +45,34 @@
 /* zadání: 
 Prohlédni si html soubor. Nastyluj obrázky, aby se zobrazily vedle sebe, vycentrovaly v obalovém divu a zalamovaly, pokud se nevejdou na stránku. 
 Potom obrázky seřaď podle toho, jakou aktivitu budeš dělat dnes po lekci :)   */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.code {
+  order: 3;
+}
+
+.cook {
+  order: 6;
+}
+
+.family {
+  order: 1;
+}
+
+.netflix {
+  order: 5;
+}
+
+.read {
+  order: 2;
+}
+
+.sleep {
+  order: 4;
+}
